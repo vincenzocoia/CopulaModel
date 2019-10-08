@@ -1,0 +1,1403 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+                "kind" : 6,
+                "line" : 119,
+                "name" : "r_exchmvn(int *, double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@r_exchmvn"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+                "kind" : 6,
+                "line" : 135,
+                "name" : "r_g(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@r_g"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+                "kind" : 6,
+                "line" : 164,
+                "name" : "r_emvnd(int *, double *, double *, double *, int *, int *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@r_emvnd"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+                "kind" : 6,
+                "line" : 181,
+                "name" : "r_gd(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@r_gd"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+                "kind" : 6,
+                "line" : 212,
+                "name" : "r_emvndrh(int *, double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@r_emvndrh"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+                "kind" : 6,
+                "line" : 244,
+                "name" : "r_grh(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@r_grh"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+                "kind" : 6,
+                "line" : 294,
+                "name" : "romberg(double (*)(double), double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@romberg"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/R_exchmvn.c",
+        "file_last_write" : 1400629712
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 22,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/fastktau.c",
+                "kind" : 8,
+                "line" : 10,
+                "name" : "boolean",
+                "parent_name" : "",
+                "usr" : "c:fastktau.c@T@boolean"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/fastktau.c",
+                "kind" : 6,
+                "line" : 38,
+                "name" : "ktau(double *, double *, int *, double *, double *, double *, int *, int *, int *, int *)",
+                "parent_name" : "",
+                "usr" : "c:@F@ktau"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/fastktau.c",
+        "file_last_write" : 1404838797
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/gauleg.c",
+                "kind" : 6,
+                "line" : 35,
+                "name" : "gauleg(double *, double *, int *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@gauleg"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/gauleg.c",
+        "file_last_write" : 1346175862
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/gevmle.c",
+                "kind" : 6,
+                "line" : 50,
+                "name" : "gevmle(double *, int *, double *, double *, double *, int *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@gevmle"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/gevmle.c",
+                "kind" : 6,
+                "line" : 152,
+                "name" : "gevllk(double *, int, double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@gevllk"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/gevmle.c",
+        "file_last_write" : 1400628988
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/gpmle.c",
+                "kind" : 6,
+                "line" : 44,
+                "name" : "gpmle(double *, int *, double *, double *, int *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@gpmle"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/gpmle.c",
+        "file_last_write" : 1400628988
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/lgamma.c",
+                "kind" : 6,
+                "line" : 34,
+                "name" : "lgamma_(double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@lgamma_"
+            },
+            {
+                "column" : 15,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/lgamma.c",
+                "kind" : 6,
+                "line" : 52,
+                "name" : "asform(double)",
+                "parent_name" : "",
+                "usr" : "c:lgamma.c@F@asform"
+            },
+            {
+                "column" : 15,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/lgamma.c",
+                "kind" : 6,
+                "line" : 66,
+                "name" : "lGam_neg(double)",
+                "parent_name" : "",
+                "usr" : "c:lgamma.c@F@lGam_neg"
+            },
+            {
+                "column" : 15,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/lgamma.c",
+                "kind" : 6,
+                "line" : 94,
+                "name" : "Gam_pos(double)",
+                "parent_name" : "",
+                "usr" : "c:lgamma.c@F@Gam_pos"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/lgamma.c",
+        "file_last_write" : 1347665784
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/miscutil.c",
+                "kind" : 6,
+                "line" : 26,
+                "name" : "sqr(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@sqr"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/miscutil.c",
+        "file_last_write" : 1372108077
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/mvnscher.c",
+                "kind" : 6,
+                "line" : 23,
+                "name" : "mvnscher(double *, double *, double *, double *, int *, int *, double *, double *, int *)",
+                "parent_name" : "",
+                "usr" : "c:@F@mvnscher"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/mvnscher.c",
+        "file_last_write" : 1401161565
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm.c",
+                "kind" : 6,
+                "line" : 38,
+                "name" : "pbnorm(int *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pbnorm"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm.c",
+                "kind" : 6,
+                "line" : 89,
+                "name" : "min(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@min"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm.c",
+                "kind" : 6,
+                "line" : 92,
+                "name" : "max(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@max"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm.c",
+                "kind" : 6,
+                "line" : 106,
+                "name" : "bivnor(double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@bivnor"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm.c",
+                "kind" : 6,
+                "line" : 201,
+                "name" : "alnorm(double, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@alnorm"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm.c",
+        "file_last_write" : 1401252955
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm_f.c",
+                "kind" : 6,
+                "line" : 38,
+                "name" : "pbnorm_(int *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pbnorm_"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pbnorm_f.c",
+        "file_last_write" : 1401252742
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 44,
+                "name" : "mulnor(double *, double *, double *, double, int, int *, double *, double *, int *)",
+                "parent_name" : "",
+                "usr" : "c:@F@mulnor"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 392,
+                "name" : "phistar(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@phistar"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 412,
+                "name" : "invert(double *, double *, double (*)[16], int, double *, int *)",
+                "parent_name" : "",
+                "usr" : "c:@F@invert"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 484,
+                "name" : "gauinv(double, int *)",
+                "parent_name" : "",
+                "usr" : "c:@F@gauinv"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 511,
+                "name" : "ff(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@ff"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 514,
+                "name" : "f3(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@f3"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 517,
+                "name" : "f4(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@f4"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 520,
+                "name" : "f5(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@f5"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+                "kind" : 6,
+                "line" : 523,
+                "name" : "f6(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@f6"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/pmnorm.c",
+        "file_last_write" : 1401161345
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "pbetab(double, double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@pbetab"
+            },
+            {
+                "column" : 15,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+                "kind" : 6,
+                "line" : 122,
+                "name" : "incbcf(double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:ptbeta.c@F@incbcf"
+            },
+            {
+                "column" : 15,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+                "kind" : 6,
+                "line" : 177,
+                "name" : "incbd(double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:ptbeta.c@F@incbd"
+            },
+            {
+                "column" : 15,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+                "kind" : 6,
+                "line" : 236,
+                "name" : "pseries(double, double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:ptbeta.c@F@pseries"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+                "kind" : 6,
+                "line" : 265,
+                "name" : "lbeta(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@lbeta"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+                "kind" : 6,
+                "line" : 268,
+                "name" : "pbeta(double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@pbeta"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+                "kind" : 6,
+                "line" : 271,
+                "name" : "pt_(double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pt_"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/ptbeta.c",
+        "file_last_write" : 1347670887
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qcgal.c",
+                "kind" : 6,
+                "line" : 33,
+                "name" : "qcgal(int *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcgal"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qcgal.c",
+        "file_last_write" : 1400632016
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qcgum.c",
+                "kind" : 6,
+                "line" : 35,
+                "name" : "qcgum(int *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcgum"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qcgum.c",
+        "file_last_write" : 1400631869
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qchr.c",
+                "kind" : 6,
+                "line" : 31,
+                "name" : "qchr(int *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qchr"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qchr.c",
+        "file_last_write" : 1400632209
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qcondbb.c",
+                "kind" : 6,
+                "line" : 15,
+                "name" : "qcbb1(int *, double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcbb1"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qcondbb.c",
+        "file_last_write" : 1400632323
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qt.c",
+                "kind" : 6,
+                "line" : 52,
+                "name" : "qt(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@qt"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qt.c",
+                "kind" : 6,
+                "line" : 126,
+                "name" : "qnorms(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@qnorms"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qt.c",
+                "kind" : 6,
+                "line" : 153,
+                "name" : "dnorms(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@dnorms"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qt.c",
+                "kind" : 6,
+                "line" : 230,
+                "name" : "pnorms(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@pnorms"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qt.c",
+                "kind" : 6,
+                "line" : 288,
+                "name" : "fint(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@fint"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/qt.c",
+        "file_last_write" : 1372023920
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb1-v2.c",
+                "kind" : 6,
+                "line" : 72,
+                "name" : "rbb1(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb1"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb1-v2.c",
+                "kind" : 6,
+                "line" : 95,
+                "name" : "pcondbb1(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb1"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb1-v2.c",
+                "kind" : 6,
+                "line" : 124,
+                "name" : "qcondbb1(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb1"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb1-v2.c",
+        "file_last_write" : 1401160481
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb10.c",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "rbb10(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb10"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb10.c",
+                "kind" : 6,
+                "line" : 80,
+                "name" : "pcondbb10(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb10"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb10.c",
+                "kind" : 6,
+                "line" : 96,
+                "name" : "qcondbb10(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb10"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb10.c",
+        "file_last_write" : 1401160457
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb2.c",
+                "kind" : 6,
+                "line" : 62,
+                "name" : "rbb2(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb2"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb2.c",
+                "kind" : 6,
+                "line" : 84,
+                "name" : "pcondbb2(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb2"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb2.c",
+                "kind" : 6,
+                "line" : 118,
+                "name" : "qcondbb2(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb2"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb2.c",
+        "file_last_write" : 1401160495
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb3.c",
+                "kind" : 6,
+                "line" : 61,
+                "name" : "rbb3(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb3"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb3.c",
+                "kind" : 6,
+                "line" : 83,
+                "name" : "pcondbb3(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb3"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb3.c",
+                "kind" : 6,
+                "line" : 128,
+                "name" : "qcondbb3(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb3"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb3.c",
+        "file_last_write" : 1401160510
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb4.c",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "rbb4(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb4"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb4.c",
+                "kind" : 6,
+                "line" : 80,
+                "name" : "pcondbb4(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb4"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb4.c",
+                "kind" : 6,
+                "line" : 98,
+                "name" : "qcondbb4(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb4"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb4.c",
+        "file_last_write" : 1401160530
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb5.c",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "rbb5(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb5"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb5.c",
+                "kind" : 6,
+                "line" : 80,
+                "name" : "pcondbb5(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb5"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb5.c",
+                "kind" : 6,
+                "line" : 102,
+                "name" : "qcondbb5(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb5"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb5.c",
+        "file_last_write" : 1401160550
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb6.c",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "rbb6(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb6"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb6.c",
+                "kind" : 6,
+                "line" : 80,
+                "name" : "pcondbb6(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb6"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb6.c",
+                "kind" : 6,
+                "line" : 98,
+                "name" : "qcondbb6(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb6"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb6.c",
+        "file_last_write" : 1401160571
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb7.c",
+                "kind" : 6,
+                "line" : 64,
+                "name" : "rbb7(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb7"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb7.c",
+                "kind" : 6,
+                "line" : 86,
+                "name" : "pcondbb7(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb7"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb7.c",
+                "kind" : 6,
+                "line" : 113,
+                "name" : "qcondbb7(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb7"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb7.c",
+        "file_last_write" : 1401160594
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb8.c",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "rbb8(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb8"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb8.c",
+                "kind" : 6,
+                "line" : 80,
+                "name" : "pcondbb8(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb8"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb8.c",
+                "kind" : 6,
+                "line" : 99,
+                "name" : "qcondbb8(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb8"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb8.c",
+        "file_last_write" : 1401160614
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb9.c",
+                "kind" : 6,
+                "line" : 63,
+                "name" : "rbb9(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbb9"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb9.c",
+                "kind" : 6,
+                "line" : 85,
+                "name" : "pcondbb9(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondbb9"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb9.c",
+                "kind" : 6,
+                "line" : 111,
+                "name" : "qcondbb9(double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondbb9"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rbb9.c",
+        "file_last_write" : 1401160635
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch1fact.c",
+                "kind" : 6,
+                "line" : 127,
+                "name" : "rgarch1fact(int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgarch1fact"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch1fact.c",
+                "kind" : 6,
+                "line" : 225,
+                "name" : "sim1factmvt(int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@sim1factmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch1fact.c",
+                "kind" : 6,
+                "line" : 253,
+                "name" : "sim1fact(int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@sim1fact"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch1fact.c",
+        "file_last_write" : 1400625402
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch2fact.c",
+                "kind" : 6,
+                "line" : 120,
+                "name" : "rgarch2fact(int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgarch2fact"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch2fact.c",
+                "kind" : 6,
+                "line" : 211,
+                "name" : "sim2factmvt(int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@sim2factmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch2fact.c",
+                "kind" : 6,
+                "line" : 241,
+                "name" : "sim2fact(int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@sim2fact"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarch2fact.c",
+        "file_last_write" : 1400624355
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchbifact-ipol.c",
+                "kind" : 6,
+                "line" : 109,
+                "name" : "rgarchbifactmvt(int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgarchbifactmvt"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchbifact-ipol.c",
+        "file_last_write" : 1400625286
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchbifact.c",
+                "kind" : 6,
+                "line" : 121,
+                "name" : "rgarchbifact(int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgarchbifact"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchbifact.c",
+                "kind" : 6,
+                "line" : 214,
+                "name" : "simbifactmvt(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@simbifactmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchbifact.c",
+                "kind" : 6,
+                "line" : 254,
+                "name" : "simbifact(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@simbifact"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchbifact.c",
+        "file_last_write" : 1400624649
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchnestfact-ipol.c",
+                "kind" : 6,
+                "line" : 119,
+                "name" : "rgarchnestfactmvt(int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgarchnestfactmvt"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchnestfact-ipol.c",
+        "file_last_write" : 1400625066
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchnestfact.c",
+                "kind" : 6,
+                "line" : 122,
+                "name" : "rgarchnestfact(int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgarchnestfact"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchnestfact.c",
+                "kind" : 6,
+                "line" : 217,
+                "name" : "simnestfactmvt(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@simnestfactmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchnestfact.c",
+                "kind" : 6,
+                "line" : 272,
+                "name" : "simnestfact(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@simnestfact"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rcopgarchnestfact.c",
+        "file_last_write" : 1400624718
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 17,
+                "name" : "r1fact(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@r1fact"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 46,
+                "name" : "r1factmvt(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@r1factmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 69,
+                "name" : "r2fact(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@r2fact"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 97,
+                "name" : "r2factmvt(int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@r2factmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 122,
+                "name" : "rbifactmvt(int *, int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbifactmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 146,
+                "name" : "rbifact(int *, int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rbifact"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 175,
+                "name" : "rnestfactmvt(int *, int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rnestfactmvt"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+                "kind" : 6,
+                "line" : 199,
+                "name" : "rnestfact(int *, int *, int *, double *, int *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rnestfact"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfact.c",
+        "file_last_write" : 1400622096
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfrk.c",
+                "kind" : 6,
+                "line" : 59,
+                "name" : "rfrk(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rfrk"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfrk.c",
+                "kind" : 6,
+                "line" : 81,
+                "name" : "pcondfrk(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondfrk"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfrk.c",
+                "kind" : 6,
+                "line" : 96,
+                "name" : "qcondfrk(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondfrk"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rfrk.c",
+        "file_last_write" : 1400549596
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgal.c",
+                "kind" : 6,
+                "line" : 55,
+                "name" : "rgal(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgal"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgal.c",
+                "kind" : 6,
+                "line" : 78,
+                "name" : "pcondgal(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondgal"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgal.c",
+                "kind" : 6,
+                "line" : 110,
+                "name" : "qcondgal(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondgal"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgal.c",
+        "file_last_write" : 1400631991
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgum.c",
+                "kind" : 6,
+                "line" : 60,
+                "name" : "rgum(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgum"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgum.c",
+                "kind" : 6,
+                "line" : 83,
+                "name" : "pcondgum(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondgum"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgum.c",
+                "kind" : 6,
+                "line" : 109,
+                "name" : "qcondgum(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondgum"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgum.c",
+                "kind" : 6,
+                "line" : 156,
+                "name" : "qcondgumr(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondgumr"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rgum.c",
+        "file_last_write" : 1400631646
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rhr.c",
+                "kind" : 6,
+                "line" : 65,
+                "name" : "rhr(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rhr"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rhr.c",
+                "kind" : 6,
+                "line" : 88,
+                "name" : "pcondhr(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondhr"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rhr.c",
+                "kind" : 6,
+                "line" : 107,
+                "name" : "qcondhr(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondhr"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rhr.c",
+        "file_last_write" : 1400632053
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rjoeb5.c",
+                "kind" : 6,
+                "line" : 59,
+                "name" : "rjoeb5(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rjoeb5"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rjoeb5.c",
+                "kind" : 6,
+                "line" : 81,
+                "name" : "pcondjoe(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondjoe"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rjoeb5.c",
+                "kind" : 6,
+                "line" : 99,
+                "name" : "qcondjoe(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondjoe"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rjoeb5.c",
+        "file_last_write" : 1400549622
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rmfrk.c",
+                "kind" : 6,
+                "line" : 49,
+                "name" : "rkemp1(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@rkemp1"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rmfrk.c",
+                "kind" : 6,
+                "line" : 77,
+                "name" : "rmfrk(int *, int *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rmfrk"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rmfrk.c",
+        "file_last_write" : 1400550010
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rpla.c",
+                "kind" : 6,
+                "line" : 60,
+                "name" : "rpla(int *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@rpla"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rpla.c",
+                "kind" : 6,
+                "line" : 85,
+                "name" : "qcondpla(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@qcondpla"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rpla.c",
+                "kind" : 6,
+                "line" : 124,
+                "name" : "pcondpla(double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pcondpla"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rpla.c",
+        "file_last_write" : 1400549585
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rt.c",
+                "kind" : 6,
+                "line" : 59,
+                "name" : "rt(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@rt"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rt.c",
+                "kind" : 6,
+                "line" : 120,
+                "name" : "rgamma(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@rgamma"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rt.c",
+                "kind" : 6,
+                "line" : 264,
+                "name" : "snorm",
+                "parent_name" : "",
+                "usr" : "c:@F@snorm"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/rt.c",
+        "file_last_write" : 1372196183
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/urand.c",
+                "kind" : 6,
+                "line" : 6,
+                "name" : "urand",
+                "parent_name" : "",
+                "usr" : "c:@F@urand"
+            }
+        ],
+        "file" : "/Users/vincenzocoia/R_supplement/CopulaModel/src/urand.c",
+        "file_last_write" : 1393986387
+    }
+]

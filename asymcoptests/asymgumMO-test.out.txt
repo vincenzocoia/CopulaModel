@@ -1,0 +1,39 @@
+
+checking derivatives of A
+analytic and numerical:
+$Afn
+[1] 2.912311
+
+$Aderx
+[1] 0.9242536
+
+$Adery
+[1] 0.9940285
+
+$Aderxy
+[1] -0.01141344
+
+[1] 0.9242537
+[1] 0.9940285
+[1] -0.01141309
+
+checking pcond of asymmetric Gumbel
+two different conditional cdfs
+0.3337158 0.3337166 
+0.1084192 0.1084194 
+
+ asymgumMO  with parameter  2 0.1 0.2 
+u   v    cdf      numccdf     ccdf
+u   v    ccdf     numpdf      pdf
+0.1 0.3 0.03443530 0.3337158 0.3337166 
+0.1 0.3 0.3337166 1.085122 1.085123 
+
+tau and rhoS
+0.1095283 0.1609709 
+
+tau and rhoS, boundary case of Gumbel
+0.5 0.6822338 
+0.5 0.6822338 
+
+tau and rhoS, boundary case of independence
+0.0003768662 0.0005652599 

@@ -1,0 +1,20 @@
+twdm with power=6
+theoretical bivariate Gumbel
+[1] 0.6135795 0.8829386
+empirical bivariate Gumbel
+[1] 0.636019 0.873682
+
+theoretical 1-factor, 2-factor
+[1] 0.3922974 0.7835807
+[1] 0.6861428 0.9304431
+empirical 1-factor, 2-factor
+[1] 0.4109223 0.7894574
+[1] 0.7108527 0.9322988
+
+perm. asymmetric
+theoretical 1-factor, 2-factor
+[1] 0.1038596 0.4449057
+[1] 0.2120447 0.5535216
+empirical 1-factor, 2-factor
+[1] 0.1150314 0.4596818
+[1] 0.2292074 0.5596494

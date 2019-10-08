@@ -1,0 +1,6 @@
+max abs difference1 = 0.05753447 
+corDis1= 0.1145649 
+max abs difference2 = 0.02526525 
+corDis2= 0.05096038 
+max abs difference3 = 0.008528348 
+corDis3= 0.0121464 

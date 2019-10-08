@@ -1,0 +1,32 @@
+
+BVN vs Plackett, tau=0.5
+rho= 0.7071068   param= 11.40486  copula= Plackett 
+check that this is 1:  1.000004 
+Del1= 0.0351777  Del2= 0.05183585  Jeffreys= 0.08701355 
+sig1= 0.2449800  sig2= 0.444337 
+ sample sizes to discriminate with probability 0.95:  131.2143   198.8012 
+
+  KLcop1true   KLcop2true     Jeffreys    sampsize1    sampsize2 
+  0.03517770   0.05183585   0.08701355 131.21426314 198.80122321 
+
+BVN vs Frank, tau=0.5
+rho= 0.7071068   param= 5.736287  copula= Frank 
+check that this is 1:  0.9999895 
+Del1= 0.03100959  Del2= 0.03713454  Jeffreys= 0.06814413 
+sig1= 0.2501461  sig2= 0.3287058 
+ sample sizes to discriminate with probability 0.95:  176.0556   211.9890 
+
+  KLcop1true   KLcop2true     Jeffreys    sampsize1    sampsize2 
+  0.03100959   0.03713454   0.06814413 176.05562472 211.98895498 
+
+Plackett vs Frank, tau=0.5
+
+param1= 11.40486  copula= Plackett 
+param2= 5.736287  copula= Frank 
+check that this is 1:  1.000004 
+check that this is 1:  0.9999895 
+Del1= 0.01382861  Del2= 0.01322873  Jeffreys= 0.02705735 
+sig1= 0.1709894  sig2= 0.1599211 
+ sample sizes to discriminate with probability 0.95:  413.6524   395.3933 
+  KLcop1true   KLcop2true     Jeffreys    sampsize1    sampsize2 
+  0.01382861   0.01322873   0.02705735 413.65241576 395.39333674 

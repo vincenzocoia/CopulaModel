@@ -1,0 +1,35 @@
+
+copula parameter= 5.115661 
+average u = 0.5240074 
+average v = 0.5062519 
+correlation =  0.4711114 
+
+copula parameter= 3.445227 
+average u = 0.498559 
+average v = 0.51099 
+correlation =  0.4702201 
+
+copula parameter= 1.074359 
+average u = 0.498559 
+average v = 0.5068266 
+correlation =  0.4753433 
+
+copula parameter= 1.985342 
+average u = 0.5240074 
+average v = 0.4979299 
+correlation =  0.4725256 
+
+copula parameter= 1.541070 
+average u = 0.5240074 
+average v = 0.50222 
+correlation =  0.463045 
+
+copula parameter= 0.8133908 
+average u = 0.5240074 
+average v = 0.5014851 
+correlation =  0.4589076 
+
+copula parameter= 1.245192 
+average u = 0.5240074 
+average v = 0.5008663 
+correlation =  0.4552035 

@@ -1,0 +1,15 @@
+Gumbel and symmetrized version
+cpar= 2 
+0.5 0.4990331 
+cpar= 3 
+0.6666667 0.6650997 
+cpar= 4 
+0.75 0.7483863 
+
+MTCJ and symmetrized version
+cpar= 2 
+0.5 0.4968594 
+cpar= 3 
+0.6 0.5942359 
+cpar= 4 
+0.6666667 0.6593602 

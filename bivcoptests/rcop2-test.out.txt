@@ -1,0 +1,44 @@
+
+cpar= 0.3 1.1 
+average u = 0.5033534 
+average v = 0.4961458 
+correlation =  0.2308607 
+[1] 0.3000000 1.1000000 0.2094862 0.1544505
+
+cpar= 0.8 1.1 
+average u = 0.5033534 
+average v = 0.4969695 
+correlation =  0.445297 
+[1] 0.8000000 1.1000000 0.3506494 0.3047007
+
+cpar= 1.5 1.1 
+average u = 0.5033534 
+average v = 0.4966684 
+correlation =  0.6286309 
+[1] 1.5000000 1.1000000 0.4805195 0.4501061
+
+cpar= 1.5 2.1 
+average u = 0.5033534 
+average v = 0.50052 
+correlation =  0.8873496 
+[1] 1.5000000 2.1000000 0.7278912 0.7179900
+
+cpar= 1.3 0.1 
+average u = 0.5033534 
+average v = 0.4963231 
+correlation =  0.1962316 
+
+cpar= 1.8 0.1 
+average u = 0.5033534 
+average v = 0.4988588 
+correlation =  0.4246056 
+
+cpar= 2.5 0.1 
+average u = 0.5033534 
+average v = 0.4999037 
+correlation =  0.6043514 
+
+cpar= 1.3 1.1 
+average u = 0.5033534 
+average v = 0.4980287 
+correlation =  0.5332422 

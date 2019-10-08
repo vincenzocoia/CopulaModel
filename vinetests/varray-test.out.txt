@@ -1,0 +1,14 @@
+d= 8   #vine arrays in natural order = 32768 
+check that varray2bin and vbin2array are inverses
+checking  0 
+checking  3276 
+checking  6552 
+checking  9828 
+checking  13104 
+checking  16380 
+checking  19656 
+checking  22932 
+checking  26208 
+checking  29484 
+checking  32760 
+done

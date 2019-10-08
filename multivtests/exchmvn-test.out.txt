@@ -1,0 +1,43 @@
+case 1: m=3
+pr=exchmvn(avec,bvec,rh)= 0.5089879 
+derivative wrt rho
+   numerical:  0.2490996 , analytic:  0.2490758 
+derivative wrt a_k,b_k, k=1,..., 3 
+  k= 1  lower
+   numerical:  -0.1217252 , analytic:  -0.1217156 
+  k= 1  upper
+   numerical:  0.01663045 , analytic:  0.01663287 
+  k= 2  lower
+   numerical:  -0.1224489 , analytic:  -0.1224393 
+  k= 2  upper
+   numerical:  0.06612606 , analytic:  0.06613284 
+  k= 3  lower
+   numerical:  -0.1265524 , analytic:  -0.1265421 
+  k= 3  upper
+   numerical:  0.1940349 , analytic:  0.1940461 
+
+case 2: m=5
+pr=exchmvn(avec,bvec,rh)= 0.4106018 
+derivative wrt rho
+   numerical:  0.4187429 , analytic:  0.418705 
+derivative wrt a_k,b_k, k=1,..., 5 
+  k= 1  lower
+   numerical:  -0.07999639 , analytic:  -0.07998886 
+  k= 1  upper
+   numerical:  0.01271974 , analytic:  0.01272172 
+  k= 2  lower
+   numerical:  -0.08062342 , analytic:  -0.0806158 
+  k= 2  upper
+   numerical:  0.05357616 , analytic:  0.05358201 
+  k= 3  lower
+   numerical:  -0.08408392 , analytic:  -0.08407581 
+  k= 3  upper
+   numerical:  0.161772 , analytic:  0.1617820 
+  k= 4  lower
+   numerical:  -0.08062342 , analytic:  -0.0806158 
+  k= 4  upper
+   numerical:  0.05357616 , analytic:  0.05358201 
+  k= 5  lower
+   numerical:  -0.07999639 , analytic:  -0.07998886 
+  k= 5  upper
+   numerical:  0.01271974 , analytic:  0.01272172 

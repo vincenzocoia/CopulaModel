@@ -1,0 +1,230 @@
+
+univariate for alae, Burr
+iteration = 0
+Step:
+[1] 0 0 0
+Parameter:
+[1] 2.39 1.00 1.60
+Function Value
+[1] 646.735
+Gradient:
+[1]  10.75610 -75.95207 -17.16356
+
+iteration = 17
+Parameter:
+[1] 2.124780 1.095413 1.423125
+Function Value
+[1] 643.47
+Gradient:
+[1] -0.0002385263  0.0005113462  0.0003545312
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+
+univariate for loss, Pareto
+iteration = 0
+Step:
+[1] 0 0
+Parameter:
+[1] 1.5 1.5
+Function Value
+[1] 1205.377
+Gradient:
+[1]  82.1509 -48.7962
+
+iteration = 8
+Parameter:
+[1] 1.320371 1.666202
+Function Value
+[1] 1193.997
+Gradient:
+[1] -0.0001541229  0.0002523187
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+                     SE
+[1,] 1.320371 0.1289922
+[2,] 1.666202 0.2598457
+
+============================================================
+
+IFM, Burr for alae, Pareto for loss invgamA 
+iteration = 0
+Step:
+[1] 0
+Parameter:
+[1] 0.8
+Function Value
+[1] -74.34281
+Gradient:
+[1] -25.82525
+
+iteration = 4
+Parameter:
+[1] 0.9921998
+Function Value
+[1] -76.76573
+Gradient:
+[1] 0
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+cpar= 0.9921998 
+ifmSE= 0.08917537 
+
+pseudo, Burr for alae, Pareto for loss
+iteration = 0
+Step:
+[1] 0
+Parameter:
+[1] 0.8
+Function Value
+[1] -74.0633
+Gradient:
+[1] -25.87287
+
+iteration = 4
+Parameter:
+[1] 0.9886576
+Function Value
+[1] -76.44313
+Gradient:
+[1] -5.684342e-08
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+cpar= 0.9886576 
+empSE= 0.088456 
+
+full log-likelihood, Burr for alae, Pareto for loss
+iteration = 0
+Step:
+[1] 0 0 0 0 0 0
+Parameter:
+[1] 2.1247798 1.0954125 1.4231250 1.3203713 1.6662018 0.9921998
+Function Value
+[1] 1760.701
+Gradient:
+[1]  4.1143910 -0.5142509 -6.3311071 -5.5843293  2.2089056  0.0000000
+
+iteration = 25
+Parameter:
+[1] 2.460765 1.061362 1.759889 1.346784 1.709424 0.989435
+Function Value
+[1] 1760.387
+Gradient:
+[1]  4.370500e-04  4.764436e-04 -4.020634e-04  2.407475e-04  4.309583e-05
+[6]  6.821210e-07
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+                      SE
+[1,] 2.460765 0.57133357
+[2,] 1.061362 0.05815360
+[3,] 1.759889 0.55442402
+[4,] 1.346784 0.13006564
+[5,] 1.709424 0.26376646
+[6,] 0.989435 0.09588509
+
+For Comparisons  invgamA 
+bivmodnllk(Burr,Pareto,full)= 1760.387 
+bivcopnllk(Burr,Pareto,IFM) = -76.76573 
+empnllk(Burr,Pareto)=         -76.44313 
+
+============================================================
+
+
+IFM, Burr for alae, Pareto for loss gumbel 
+iteration = 0
+Step:
+[1] 0
+Parameter:
+[1] 1.8
+Function Value
+[1] -52.46146
+Gradient:
+[1] 139.0961
+
+iteration = 6
+Parameter:
+[1] 1.428870
+Function Value
+[1] -80.7487
+Gradient:
+[1] 1.916501e-05
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+cpar= 1.428870 
+ifmSE= 0.04446474 
+
+pseudo, Burr for alae, Pareto for loss
+iteration = 0
+Step:
+[1] 0
+Parameter:
+[1] 1.8
+Function Value
+[1] -50.74299
+Gradient:
+[1] 139.4889
+
+iteration = 6
+Parameter:
+[1] 1.425723
+Function Value
+[1] -79.35387
+Gradient:
+[1] 2.045325e-05
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+cpar= 1.425723 
+empSE= 0.04457683 
+
+full log-likelihood, Burr for alae, Pareto for loss
+iteration = 0
+Step:
+[1] 0 0 0 0 0 0
+Parameter:
+[1] 2.124780 1.095413 1.423125 1.320371 1.666202 1.428870
+Function Value
+[1] 1756.718
+Gradient:
+[1]  4.838728e+00  5.123782e-01 -4.856516e+00 -6.310837e+00  3.334828e+00
+[6]  1.925452e-05
+
+iteration = 19
+Parameter:
+[1] 2.047519 1.100802 1.370147 1.306715 1.622723 1.433064
+Function Value
+[1] 1756.630
+Gradient:
+[1] -3.430285e-04  1.074694e-03  3.901448e-04 -2.952849e-04  7.860652e-05
+[6]  4.977245e-04
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+                      SE
+[1,] 2.047519 0.41028415
+[2,] 1.100802 0.06119071
+[3,] 1.370147 0.36878699
+[4,] 1.306715 0.11907620
+[5,] 1.622723 0.23979620
+[6,] 1.433064 0.05088874
+
+For Comparisons  gumbel 
+bivmodnllk(Burr,Pareto,full)= 1756.630 
+bivcopnllk(Burr,Pareto,IFM) = -80.7487 
+empnllk(Burr,Pareto)=         -79.35387 
+
+============================================================
+

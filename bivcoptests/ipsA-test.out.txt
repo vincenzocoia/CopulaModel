@@ -1,0 +1,132 @@
+checking Kendall tau
+cpar= 0.1 0.5 0.7 1 2 3 
+-0.7663028 -0.2732395 -0.1402139 0 0.25 0.375 
+tau=seq(-.9,.9,.1)
+cpar= 0.03868105 0.08335813 0.1354444 0.1968076 0.2699585 0.3583378 0.4667631 0.6021486 0.774702 1 1.302762 1.724116 2.336603 3.278015 4.836848 7.703827 13.89490 31.58001 127.0737 
+apply tau function:  -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 
+tau from 1-dimensional integral
+[1]  0.1000000 -0.7663028
+[1]  0.5000000 -0.2732395
+[1]  0.7000000 -0.1402139
+[1] 1.000000e+00 2.260414e-12
+[1] 2.00 0.25
+[1] 3.0000000 0.3750000
+
+checking pcond/qcond
+       u   v        pp  vv
+[1,] 0.1 0.4 0.2338478 0.4
+[2,] 0.2 0.5 0.3815073 0.5
+[3,] 0.3 0.6 0.5308430 0.6
+[4,] 0.4 0.7 0.6752302 0.7
+[5,] 0.5 0.8 0.8069843 0.8
+[6,] 0.6 0.9 0.9181563 0.9
+       u   p        vv  pp
+[1,] 0.1 0.4 0.5711478 0.4
+[2,] 0.2 0.5 0.6112438 0.5
+[3,] 0.3 0.6 0.6632052 0.6
+[4,] 0.4 0.7 0.7231886 0.7
+[5,] 0.5 0.8 0.7929418 0.8
+[6,] 0.6 0.9 0.8787268 0.9
+
+checking pcop, pcond, dcop
+
+ ipsA  with parameter  1.6 
+u   v    cdf      numccdf     ccdf
+u   v    ccdf     numpdf      pdf
+0.3 0.4 0.1585979 0.457252 0.4572538 
+0.3 0.4 0.4572538 1.087721 1.087723 
+0.3 0.5 0.1887161 0.5637087 0.5637104 
+0.3 0.5 0.5637104 1.040222 1.040224 
+0.3 0.6 0.2161558 0.6650597 0.6650612 
+0.3 0.6 0.6650612 0.985568 0.985571 
+0.3 0.7 0.2410547 0.7605623 0.7605635 
+0.3 0.7 0.7605635 0.923039 0.9230423 
+0.3 0.8 0.2634544 0.849337 0.8493378 
+0.3 0.8 0.8493378 0.850449 0.850453 
+0.3 0.9 0.2832688 0.9301241 0.9301246 
+0.3 0.9 0.9301246 0.7615005 0.7615056 
+
+checking rng, nscore and semicor
+    ncorr     lcorr     ucorr 
+0.3706389 0.1930397 0.2261396 
+    ncorr     lcorr     ucorr 
+0.7501995 0.5624084 0.5483570 
+
+KL divergence versus bivariate Gaussian
+tau= 0.7 
+rho= 0.8910065   param= 13.89490  copula= ipsA 
+check that this is 1:  0.999554 
+Del1= 0.0994534  Del2= 0.1236674  Jeffreys= 0.2231208 
+sig1= 0.4548016  sig2= 0.6722967 
+ sample sizes to discriminate with probability 0.95:  56.57952   79.9588 
+
+tau= 0.6 
+rho= 0.809017   param= 7.703827  copula= ipsA 
+check that this is 1:  0.9999934 
+Del1= 0.04818556  Del2= 0.06899388  Jeffreys= 0.1171794 
+sig1= 0.2995678  sig2= 0.5049248 
+ sample sizes to discriminate with probability 0.95:  104.5709   144.9061 
+
+tau= 0.5 
+rho= 0.7071068   param= 4.836848  copula= ipsA 
+check that this is 1:  0.9999983 
+Del1= 0.03733854  Del2= 0.05166646  Jeffreys= 0.089005 
+sig1= 0.2628039  sig2= 0.419446 
+ sample sizes to discriminate with probability 0.95:  134.0304   178.3155 
+
+tau= 0.4 
+rho= 0.5877853   param= 3.278015  copula= ipsA 
+check that this is 1:  0.9999823 
+Del1= 0.02687081  Del2= 0.03402862  Jeffreys= 0.06089943 
+sig1= 0.2252285  sig2= 0.3171732 
+ sample sizes to discriminate with probability 0.95:  190.0813   235.0493 
+
+tau= 0.3 
+rho= 0.4539905   param= 2.336603  copula= ipsA 
+check that this is 1:  0.9999985 
+Del1= 0.01422346  Del2= 0.016239  Jeffreys= 0.03046246 
+sig1= 0.166762  sig2= 0.2025326 
+ sample sizes to discriminate with probability 0.95:  371.91   420.8486 
+
+tau= 0.2 
+rho= 0.309017   param= 1.724116  copula= ipsA 
+check that this is 1:  1.000002 
+Del1= 0.004661009  Del2= 0.004828139  Jeffreys= 0.009489147 
+sig1= 0.09712706  sig2= 0.1024156 
+ sample sizes to discriminate with probability 0.95:  1174.830   1217.382 
+
+tau= -0.2 
+rho= -0.309017   param= 0.6021486  copula= ipsA 
+check that this is 1:  1.000005 
+Del1= 0.08483392  Del2= 0.09335266  Jeffreys= 0.1781866 
+sig1= 0.4042413  sig2= 0.4627518 
+ sample sizes to discriminate with probability 0.95:  61.43231   66.48096 
+
+tau= -0.3 
+rho= -0.4539905   param= 0.4667631  copula= ipsA 
+check that this is 1:  1.000004 
+Del1= 0.1522747  Del2= 0.1895832  Jeffreys= 0.3418579 
+sig1= 0.5243631  sig2= 0.7209682 
+ sample sizes to discriminate with probability 0.95:  32.08215   39.12793 
+
+tau= -0.4 
+rho= -0.5877853   param= 0.3583378  copula= ipsA 
+check that this is 1:  1.000006 
+Del1= 0.2475529  Del2= 0.3688411  Jeffreys= 0.616394 
+sig1= 0.6384898  sig2= 1.128832 
+ sample sizes to discriminate with probability 0.95:  17.99809   25.34165 
+
+tau= -0.5 
+rho= -0.7071068   param= 0.2699585  copula= ipsA 
+check that this is 1:  1.000005 
+Del1= 0.3784733  Del2= 0.7151414  Jeffreys= 1.093615 
+sig1= 0.7424407  sig2= 1.818947 
+ sample sizes to discriminate with probability 0.95:  10.41136   17.50294 
+
+tau= -0.6 
+rho= -0.809017   param= 0.1968076  copula= ipsA 
+check that this is 1:  1.000005 
+Del1= 0.5578962  Del2= 1.436883  Jeffreys= 1.994779 
+sig1= 0.8326054  sig2= 3.104913 
+ sample sizes to discriminate with probability 0.95:  6.02596   12.63312 
+

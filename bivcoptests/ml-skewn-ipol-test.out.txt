@@ -1,0 +1,114 @@
+
+univariate for alae, Burr
+iteration = 0
+Step:
+[1] 0 0 0
+Parameter:
+[1] 2.39 1.00 1.60
+Function Value
+[1] 646.735
+Gradient:
+[1]  10.75610 -75.95207 -17.16356
+
+iteration = 17
+Parameter:
+[1] 2.124780 1.095413 1.423125
+Function Value
+[1] 643.47
+Gradient:
+[1] -0.0002385263  0.0005113462  0.0003545312
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+
+univariate for loss, Pareto
+iteration = 0
+Step:
+[1] 0 0
+Parameter:
+[1] 1.5 1.5
+Function Value
+[1] 1205.377
+Gradient:
+[1]  82.1509 -48.7962
+
+iteration = 8
+Parameter:
+[1] 1.320371 1.666202
+Function Value
+[1] 1193.997
+Gradient:
+[1] -0.0001541229  0.0002523187
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+
+============================================================
+min/max= 0.0007918924 0.9984062 
+[1] -70.43189
+start1
+
+IFM, Burr for alae, Pareto for loss bivariate skew-normal copula 
+iteration = 0
+Step:
+[1] 0 0
+Parameter:
+[1] 0.5 0.2
+Function Value
+[1] -70.94452
+Gradient:
+[1] 37.612818 -6.333073
+
+iteration = 18
+Parameter:
+[1] 0.6981239 0.8189683
+Function Value
+[1] -78.6262
+Gradient:
+[1]  4.774847e-05 -5.320544e-05
+
+Relative gradient close to zero.
+Current iterate is probably solution.
+
+
+start2
+
+IFM, Burr for alae, Pareto for loss bivariate skew-normal copula 
+iteration = 0
+Step:
+[1] 0 0
+Parameter:
+[1] 0.8 0.7
+Function Value
+[1] -2.951751
+Gradient:
+[1] 1305.1579 -379.3914
+
+iteration = 14
+Parameter:
+[1] 0.6981267 0.8189718
+Function Value
+[1] -78.6262
+Gradient:
+[1] -6.859295e-05  9.041855e-05
+
+Last global step failed to locate a point lower than x.
+Either x is an approximate local minimum of the function,
+the function is too non-linear for this algorithm,
+or steptol is too large.
+
+============================================================
+
+semi-correlations of simulated data with MLE of skew-normal copula
+trial 1
+     ncorr      lcorr      ucorr 
+0.44791121 0.08763445 0.39204252 
+trial 2
+      ncorr       lcorr       ucorr 
+ 0.44681619 -0.03265283  0.38883355 
+
+semi-correlations of alae600
+    ncorr     lcorr     ucorr 
+0.4593648 0.1555903 0.3714163 

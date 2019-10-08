@@ -1,0 +1,20 @@
+twdm with power=6
+theoretical bivariate Frank
+[1] 0.4173565 0.4173565
+empirical bivariate Frank
+[1] 0.4629517 0.4064338
+
+theoretical 1-factor, 2-factor
+[1] 0.2088164 0.2088164
+[1] 0.5310361 0.5310361
+empirical 1-factor, 2-factor
+[1] 0.2111547 0.2526689
+[1] 0.5637545 0.5517535
+
+perm. asymmetric
+theoretical 1-factor, 2-factor
+[1] 0.05841335 0.05841334
+[1] 0.1818180 0.1818180
+empirical 1-factor, 2-factor
+[1] 0.04138879 0.11844333
+[1] 0.1982748 0.1941427

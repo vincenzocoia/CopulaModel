@@ -1,0 +1,14 @@
+{
+    "data" : [
+        "\nR version 3.1.0 (2014-04-10) -- \"Spring Dance\"\nCopyright (C) 2014 The R Foundation for Statistical Computing\nPlatform: x86_64-apple-darwin13.1.0 (64-bit)\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\n  Natural language support but running in an English locale\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\n",
+        "Type 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\n",
+        "\nWarning message:\nFile monitoring failed for project at \"~/R_supplement/CopulaModel\"\nError 2 (No such file or directory)\nFeatures disabled: R source file indexing, Go to C/C++ Definition, Diagnostics",
+        "\nRestarting R session...\n\n"
+    ],
+    "type" : [
+        2,
+        2,
+        3,
+        2
+    ]
+}

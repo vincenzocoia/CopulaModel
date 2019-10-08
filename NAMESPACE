@@ -1,0 +1,306 @@
+useDynLib(CopulaModel)
+import(cubature)
+# other libraries are need for specific functions and are not included here:
+# mvtnorm, fGarch, igraph, combinat, abind
+# pmvnorm (library mvtnorm) is used by functions pmfmordprobit, mhrA
+# garchFit (library fGarch) is used by function gfiltersubset
+# minimum.spanning.tree and others in library igraph are used by
+#                    function gausstrvine.mst
+#    (updated August 2015 to use igraph instead of igraph0)
+# permn (library combinat) is used by functions mprobitvsRvine, f90mprobitvsRvine
+# abind (library abind) is used by functions ir1factpmf, ir2factpmf
+
+export(pcop,dcop,logdcop,pcond,qcond,rcop,rmcop) # generic
+export(cparbound)  # information on copula parameter bounds
+
+# 1-parameter bivariate copula families + bivariate t
+# pcop, dcop, logdcop, pcond, qcond, rcop, cpar2depmeas, depmeas2cpar
+export(pbnorm,pbvt) # pbnorm.c pbvt.f90 for bivariate normal/t cdf vectorized
+export(pbvtcop,pbvncop)
+export(dbvt,dbvtcop,dbvn,dbvn2,dbvncop) # 2 versions for dbvn 
+export(logdbvtcop,logdbvn,logdbvncop)
+export(pcondbvncop,pcondbvtcop,pcondt) 
+export(qcondbvncop,qcondbvtcop,qcondt)  
+export(ppla,pfrk,pmtcj,pmtcjr,pjoe,pgum,pgumr,pgal,phr)
+export(dpla,dfrk,dmtcj,dmtcjr,djoe,dgum,dgumr,dgal,dhr)
+export(logdpla,logdfrk,logdmtcj,logdmtcjr,logdjoe,logdgum,logdgal,logdhr)
+export(logdfgm,dfgm,pfgm)
+export(pcondpla,pcondfrk,pcondmtcj,pcondmtcjr,pcondjoe,pcondgum,pcondgumr,pcondgal,pcondhr,pcondfgm)
+export(qcondpla,qcondfrk,qcondmtcj,qcondmtcjr,qcondjoe,qcondgum,qcondgumr,qcondgal,qcondhr,qcondfgm)
+export(rfrk,rmtcj)
+export(rpla,rjoe,rgum,rgumr,rgal,rhr)  # rgum.c etc
+
+export(bvn.b2cpar,bvn.cpar2tau,bvn.cpar2b,bvn.cpar2rhoS,bvn.rhoS2cpar)
+export(bvt.cpar2lm,bvt.lm2cpar,bvt.dep2cpar)
+export(bvn.tau2cpar,bvt.cpar2tau,bvt.cpar2b,bvt.b2cpar,bvt.tau2cpar )
+export(pla.b2cpar,frk.b2cpar,mtcj.b2cpar,joe.b2cpar,gum.b2cpar,gal.b2cpar,hr.b2cpar)
+export(pla.cpar2rhoS,pla.rhoS2cpar,frk.cpar2rhoS,frk.cpar2tau,gum.cpar2tau,gum.tau2cpar)
+export(mtcj.cpar2tau,mtcj.tau2cpar,joe.cpar2tau)
+export(gum.cpar2rhoS, gal.cpar2rhoS, gal.cpar2tau, hr.cpar2rhoS, hr.cpar2tau)
+export(mtcj.cpar2lm,mtcj.lm2cpar,joe.cpar2lm,joe.lm2cpar)
+export(gum.cpar2lm, gum.lm2cpar,gal.cpar2lm,gal.lm2cpar,hr.cpar2lm,hr.lm2cpar)
+export(depmeas2cpar)
+
+# Archimedean copula from integrated positive stable
+export(pipsA,dipsA,pcondipsA,qcondipsA,logdipsA)
+export(ripsA,ipsA.cpar2tau,ipsA.tau2cpar)
+export(pipsAr,dipsAr,pcondipsAr,qcondipsAr,logdipsAr)
+# Archimedean copula from inverse gamma LT
+export(pinvgamA,dinvgamA,pcondinvgamA,logdinvgamA)
+export(rminvgamA,invgamA.cpar2tau,invgamA.tau2cpar)
+
+# 2-parameter bivariate copula families
+# pcop, dcop, logdcop, pcond, qcond, rcop
+export(pbb1,pbb1r,pbb2,pbb3,pbb4,pbb4r,pbb7,pbb7r,pbb9)
+export(dbb1,dbb1r,dbb2,dbb3,dbb4,dbb4r,dbb7,dbb7r,dbb9)
+export(logdbb1,logdbb1r,logdbb7)
+export(pcondbb1,pcondbb1r,pcondbb2,pcondbb3,pcondbb4,pcondbb7,pcondbb7r,pcondbb9)
+export(qcondbb1,qcondbb1r,qcondbb2,qcondbb3,qcondbb4,qcondbb7,qcondbb7r,qcondbb9)
+export(bb1.b2cpar,bb1.cpar2tau,bb1.lm2cpar,bb1.cpar2lm,bb1.tau2eqlm,bb1.dep2cpar)
+export(bb7.lm2cpar,bb7.cpar2lm)
+export(bb4.lm2cpar,bb4.cpar2lm)
+export(rbb1,rbb2,rbb3,rbb4,rbb5,rbb6,rbb7,rbb8,rbb9,rbb10)  # rbb1.c etc
+export(pbb5,pbb6,pbb8,pbb10)
+export(dbb5,dbb6,dbb8,dbb10)
+export(pcondbb5,pcondbb6,pcondbb8,pcondbb10)
+export(qcondbb5,qcondbb6,qcondbb8,qcondbb10)
+export(bb2.cpar2tau,bb3.cpar2tau,bb5.cpar2tau,bb5.cpar2rhoS,bb7.cpar2tau)
+export(bb6.cpar2tau,bb8.cpar2tau)
+export(bb9.cpar2tau,bb10.cpar2tau)
+export(ptev,pcondtev,dtev,tev.cpar2tau,tev.cpar2rhoS) 
+export(tev.cpar2b,tev.cpar2lm)
+
+# partial derivatives of log pdf or conditional cdf with respect to u,v,cpar
+export(logdfrk.deriv,pcondfrk.deriv,logdgum.deriv,pcondgum.deriv)
+export(logdbvtcop.deriv,pcondbvtcop.deriv)
+export(logdbb1.deriv,pcondbb1.deriv)
+
+# multivariate generalized beta2
+export(dbgb2,dmgb2,dbgb2cop,dmgb2cop,pbgb2,pbgb2cop,pcondbgb2cop,logdmgb2cop)
+export(rmgb2cop,bgb2.cpar2lm,mgb2.cpar2cor)
+
+# inverse Gaussian and 1-factor
+export(pIG,dIG,qIG,rIG)
+export(rIGconv,dmIGfact,dmIGfact.gl,pmIGfact,pmIGfact.gl,dbIGfact)
+export(pmIGfcop.gl,dmIGfcop.gl)
+
+# gamma 1-factor model
+export(dmgamfact,pmgamfact,dmgamfact.gl)
+export(rgammaconv,dbgamfact,pbgamfact,dbgamfact.gl)
+export(pbgamfcop,dbgamfcop,dbgamfcop.gl,pcondbgamfcop21,pcondbgamfcop12)
+export(pmgamfcop,dmgamfcop,dmgamfcop.gl)
+
+# new parametric bivariate copula families 
+export(pimitlefA,pcondimitlefA,dimitlefA,imitlefA.cpar2tau)
+export(pimitlefAr,dimitlefAr,pcondimitlefAr,qcondimitlefA)
+export(pbb1rpow,pcondbb1rpow,dbb1rpow,qcondbb1rpow)
+export(pbb7pow,pcondbb7pow,dbb7pow)
+
+# boundary copulas
+export(pindepcop,pcomonocop,pcountermono)
+export(pcondindep,pcondcomono,pcondcountermono)
+
+# LTs in Archimedean families, simulation of mixing rv and mult Archimedean 
+export(rpostable,rlogseries,rsibuya)
+export(rmitlef,rgammaSgamma,rpostableSgamma,rsibuyaSpostable,rsibuyaSgamma)
+export(rmfrk,rmfrk0,rmmtcj,rmjoe,rmgum)
+export(rmbb1,rmbb2,rmbb3,rmbb6,rmbb7,rmbb10)
+
+# bivariate dependence measures for copulas and data
+export(bvnsemic,rhoS,ktau,rhoN, makedeptable) # for bivariate copulas
+export(rhoNsemic) # semi-correlation for bivariate copulas
+export(taucor,taub) # taub is version of Kendall tau for 2-way table
+export(blomq) # for data 
+export(semicor,semicortable) # for data
+export(ktau.avar,rhoS.avar,blomqvist.avar) # for asymptotic variance
+
+# dependence measures empirical and model-based
+export(cop2srho) # Spearman rho using 2-dim GL (Pavel)
+export(rhomvn) # matrix of Spearman rho for a MVN factor
+export(srho1fact,srho2fact) # faster versions for 1- and 2-factor copulas
+export(rho2nestfact)
+# tail-weighted measures of dependence
+export(twdm,twdm.emp,twdm.emp.vec)  
+export(twdmnestcop,twdm1factcop,twdm2factcop) # nested 1fact 2fact copulas
+
+# bivariate diagnostics
+export(contourBivCop)
+export(nscore,nscoreOpta)  # bivariate normal scores plots
+export(uscore)   # uniform scores
+
+# asymmetric Gumbel and Galambos extreme value 
+export(Basymgum,pasymgum,pcondasymgum21,pcondasymgum12,dasymgum)
+export(asymgum.cpar2tau,asymgum.cpar2rhoS)
+export(Basymgal,pasymgal,pcondasymgal21,pcondasymgal12,dasymgal)
+export(asymgal.cpar2tau,asymgal.cpar2rhoS)
+export(AasymgumMO,pasymgumMO,pcondasymgumMO21,pcondasymgumMO12,dasymgumMO)
+export(asymgumMO.cpar2tau,asymgumMO.cpar2rhoS)
+# bivariate Marshall-Olkin
+export(pbMO,pcondbMO21)
+
+# simulation of bivariate copulas with extreme permutation/reflection asymmetry
+export(rbreflasym,rbpermasym,rbasymgum1,rbMO1,pbasymgum1) 
+# measures of bivariate permutation and reflection asymmetry 
+export(skewperm,skewrefl)
+export(qskewperm,qskewrefl)  # quantile measures may be better
+
+# miscellaneous utility and auxiliary functions
+export(chkcopderiv,chkcopcond) # checking copcdf coppdf pcond qcond
+export(chkincrease) # checking monotonicity
+export(isposdef) # check positive definite for symmetric matrix
+export(corvec2mat,cormat2vec) # correlation vector to matrix (vice versa)
+export(corDis) # discrepancy of model-based correlation matrix and observed one
+export(gausslegendre) # gauleg.c
+# interpolation of monotone function
+export(pcderiv,pcinterpolate)  # dpchev.f dpchez.f
+export(KLcopvsbvn,KLcopvscop, KL12gl,KLoptgl) # Kullback-Leibler
+export(bivpmf2cdf,corbivpmf)  # for bivariate pmf
+export(gfiltersubset)  # GARCH filter to a subset of logreturn matrix
+export(btsampleStaty)  # stationary bootstrap
+export(ar2acf) # AR(2) dependence with acf to lag d-1
+export(pdhessmin,pdhessminb)  # minimization with positive definite Hessian
+
+# some univariate models: GEV, GPareto
+export(gevmle,dgev,pgev,qgev,logdgev)
+export(gpmle,dgpareto,pgpareto,qgpareto)
+
+# models: bivariate and multivariate continuous 
+export(bivcopnllk,bivmodnllk) # bivariate copula with continuous; no covariate
+export(bivcopnllk.ipol) # copula F_{12}(F^{-1}(u),F^{-1}(v)) with monotone lookup 
+export(pmfrk,pmgum,pmgal)
+export(mhrA,pmhr,hrcondcor) # multivariate Huesler-Reiss
+export(exchmvn,exchmvn.deriv.margin,exchmvn.deriv.rho)
+export(fact1mvn)  # 1-factor MVN rectangle probability
+export(pmnorm) # trivariate normal rectangle probability (Schervish's code)
+
+# univariate and multivariate count/discrete data
+# nb for negative binomial, gp for generalized Poisson
+export(nb1cdf,nb2cdf,nb1pmf,nb2pmf,nbpmfcdf)
+export(nb1nllk,nb2nllk,nb1pmfcdf,nb2pmfcdf) # NB1; NB2 with covariates
+export(dgpois,pgpois,gpoispmfcdf,gp1cdf,gp2cdf,gp1pmf,gp2pmf)
+export(gp1nllk,gp2nllk,gp1pmfcdf,gp2pmfcdf) # GP1; GP2 with covariates
+
+# multivariate and univariate ordinal data
+export(d2b,d2v,v2d,unifcuts)
+export(ordinal2fr,bprobitnllk,polychoric) # ordinal without predictors
+export(polychoric.bivtab,polychoric0) # bivariate and raw ordinal data
+export(bprobitwPrednllk,polychoric.wPred) # ordinal with predictors
+export(ordprobit.univar,mord2uu)  # assume categories 1:ncateg or 0:(ncateg-1)
+export(ordinal.bivcop,bivcopOrdinalnllk)
+
+# multivariate discrete
+export(rectmult,rectmfrk,rectmgum,rectmgal,rectemvn)
+export(mdiscretenllk,emvndiscretenllk)  # latter uses exchmvn 
+export(ieenllk,latentBVNnllk1,latentBVNnllk2)
+export(MVNlatent1,MVNlatent2) # common or different univariate parameters 
+export(vinebivEvsO1)  # bivariate diagnostics; tree 1 of vine
+
+# vine arrays
+export(varray2M)
+export(varray2NO,vbin2array,varray2bin,genVineArray,varraycheck,vnum2array) 
+export(varrayperm) 
+export(Dvinearray,Cvinearray) 
+
+# partial correlations and structured correlation matrices
+export(partcor,allpcor)  
+export(cor2pcor.dvine,pcor2cor.dvine,cor2pcor.cvine,pcor2cor.cvine)
+export(cor2reg,reg2cor,cor2pcor.rvine,pcor2cor.rvine)
+export(pcor2cor.1tr,pcor2cor.2tr,pcor2cor.3tr,pcor2cor.truncvine)
+export(vineResidVar)
+# best Gaussian truncated vine, call to f90 code
+export(gausstrvine, gausstrvine.nonuniq)
+# sequential minimum spannung trees using partial correlations
+export(gausstrvine.mst) # requires igraph package
+# genetic algorithm + minimum spannung trees using partial correlations
+# added August 2015
+export(gausstrvine.galg) # requires igraph package
+
+# Gaussian factor models: loadings to partial correlations
+export(load2pcor,pcor2load)
+export(grotate2,grotate3) # Givens rotation: dx2; dx3 loading matrices
+# multivariate Gaussian and t with factor structure
+export(factanal2nllk)  # using factanal to get nllk
+# faster versions with gradient of nllk
+export(pfactnllk,factanal.co,bifactnllk,factanal.bi)
+export(trifactnllk,factanal.tri)
+export(mvtpfactnllk,mvtbifactnllk,mvtpfact,mvtbifact)
+export(mvttrifactnllk,mvttrifact,subgr.consistent)
+# bi-factor and tri-factor models (matrix inverse and determinant)
+export(bifct,bifct2,trifct)
+
+# common and structured factor copulas, d1factcop not exported
+export(sim1fact,sim2fact)
+export(simnestfact,simbifact)  
+export(ml1fact,ml1factb,f90ml1fact,f90ml2fact,f90ml2factb)
+# versions with 'b' have ifixed argument
+export(ml2fact,ml2factb)  # aliases for above
+export(f90cop1nllk,f90cop2nllk) # link to f90
+export(f90str1nllk,f90str2nllk) # link to f90; nested and bi-factor
+# bivariate margin of common factor copula cdf and conditionals
+export(pfact1cop,pfact2cop)
+export(pcondfact1,pcondfact2,dfact1cop,dfact2cop)
+export(pfact1gau,pfact1frk,pfact1gum,pfact1bb1)
+export(pfact2gau,pfact2frk,pfact2gum,pfact2bb1frk)
+# bivariate margin of nested factor copula cdf 
+export(pnest2cop,pnest2frk,pnest2gum,pnest2t,pnest2tgum,pnest2tbb1,pnest2gumbb1)
+
+# discrete factor copula models for item response
+export(sim1irfact,ml1irfact,ir1factpmf,ir1nllk,f90ml1irfact)
+export(sim2irfact,ml2irfact,ir2factpmf,ir2nllk,f90ml2irfact,f90ml2irfactb)
+export(f90irfisherinfo1,f90irfisherinfo2) # inverse of Fisher info for asympcov
+
+# vine simulation
+export(cvinesim,dvinesim,rvinesim0)  # simulation from vine (common pcop)
+export(rvinesim1) # pcop for different trees; vector param and truncated also
+export(rvinesim2,rvinesimvec,rvinesimvec2) # flexible parameter size, vectorized
+
+# log density and nllk for truncated R-vines 
+export(rvinelogpdf,cvinelogpdf,dvinelogpdf) 
+export(rvinenllk.trunc,rvinenllk1.trunc,rvinellkv.trunc)
+export(rvinenllk.trunc2,rvinellkv.trunc2) # pair-copula for each edge
+export(rvinenllkpseud,rvinenllkpseud2)
+export(rvinenllk1.nonsimpl)  # regression in second tree; 1-par pair-copulas
+# continuous R-vine with gradient of nllk
+export(rvinenllkder1.trunc,rvinenllkder2.trunc)
+export(dvinenllkder1.trunc) # for illustration of algorithm
+# cdf, pcond, pdf of bivariate margin of tree2/tree3 edge
+export(ptree2cop,pcondtree2,dtree2cop)
+export(ptree3cop.cvine,pcondtree3.cvine,dtree3cop.cvine)  
+export(ptree3cop.dvine,pcondtree3.dvine,dtree3cop.dvine)  
+
+# R-vines for discrete response
+export(dvinepmf.discrete) # discrete D-vine 
+export(rvinediscretenllk,rvinepmf.discrete,rvinediscfullnllk)
+export(rvinepmf.ordinal,rvineordinalnllk)  # ucuts is argument 
+
+# Vuong's procedure to compare two models, second version with Schwarz/BIC
+export(vuongllkr,vuong2llkr)
+export(mdiscretellkv,emvndiscretellkv,rvinediscretellkv) 
+# continuous : 1-factor, general multivariate, structured factor etc
+export(strfactllkv)
+export(mvtbifactllkv,mvttrifactllkv)
+
+# copula GARCH
+export(r1fact,r2fact,rbifact,rnestfact)
+export(rgarch1fact,rgarch2fact,rgarchbifact,rgarchnestfact) 
+export(rgarchbifactmvt,rgarchnestfactmvt) # uses monotone interpolator for pt()
+
+# discrete R-vine as approx to multivariate ordinal probit with covariates
+# multivariate ordinal probit: mordprobitfullnllk and mordprobitcornllk
+# functions below for dimensions 3 to 5, otherwise use f90 interface
+export(pmfmordprobit,dvineKLfn,dvineKLss,rvineKLfn,rvineKLss)
+export(ARprobitvsDvine,mprobitvsRvine) # wrapper functions for above
+# links to f90 code f90rvineKL, rvinediscbvnnllk, rvinediscbvnfullnllk 
+export(f90mprobitvsRvine)  # f90 version of mprobitvsRvine for more speed
+export(f90rvineKL, rvinediscbvnnllk, rvinediscbvnfullnllk)
+
+# Markov time series with copulas, including trivariate Gaussian copula
+export(gp1mcnllk,gp2mcnllk)
+export(nb1mcnllk,nb2mcnllk,pomcnllk)
+export(rmspe.mccop1,mltscop1,rmspe.mccop2,mltscop2)
+export(nb1mc2nllk,nb2mc2nllk,pomc2nllk)
+export(gp1mc2nllk,gp2mc2nllk)
+export(nb1ar2nllk,nb2ar2nllk,poar2nllk,gp1ar2nllk,gp2ar2nllk,rmspe.tvn)
+# trivariate copula from mixture of max-id 
+export(pmxid3ps,pmxid2ps,pmxidr3ps,pmxidr2ps,pmxid3ls,pmxid2ls,ptmm1,pbmm1)
+export(pcondbmm1,dbmm1) 
