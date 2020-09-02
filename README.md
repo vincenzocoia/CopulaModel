@@ -14,6 +14,12 @@ The files you see here integrate the 2015.09.03 "patches and additions" with the
 
 :warning: These instructions have not been vetted yet :warning:. 
 
+If you have the prerequisite software installed (see below), executing the following R code should install the `CopulaModel` package:
+
+```
+devtools::install_github("vincenzocoia/CopulaModel")
+```
+
 ### Prerequisites
 
 You'll need a couple things installed before installing `CopulaModel` from this GitHub repo:
@@ -41,12 +47,4 @@ Run the following R code to install the `devtools` package:
 
 ```
 install.packages("devtools")
-```
-
-### Installing `CopulaModel`
-
-Run the following R code to install the `CopulaModel` package:
-
-```
-devtools::install_github("vincenzocoia/CopulaModel")
 ```
