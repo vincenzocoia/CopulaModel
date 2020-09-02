@@ -12,7 +12,41 @@ The files you see here integrate the 2015.09.03 "patches and additions" with the
 
 ## Installing the R package
 
-:warning: These instructions have not been vetted yet :warning:. But, the hope is that installing `CopulaModel` is as simple as following these two steps:
+:warning: These instructions have not been vetted yet :warning:. 
 
-1. Install `devtools` from CRAN by executing the command `install.packages("devtools")` in R.
-2. Use `devtools` to install `CopulaModel` by executing the command `devtools::install_github("vincenzocoia/CopulaModel")`.
+### Prerequisites
+
+You'll need a couple things installed before installing `CopulaModel` from this GitHub repo:
+
+1. gcc
+2. devtools
+
+#### 1\. gcc
+
+For Mac OS, you can use HomeBrew:
+
+1. Open Terminal
+2. Check that you have HomeBrew installed by typing `which brew`. 
+  - If it returns a path, such as `/usr/local/bin/brew`, then it's installed.
+  - If it says `brew not found`, you'll have to [install HomeBrew](https://brew.sh/).
+3. Install gcc by typing `brew install gcc`
+  - If you get an error, hopefully HomeBrew will tell you how to fix it.
+4. You can check that gcc is successfully isntalled by typing `which gcc`.
+
+Sorry, I don't have Windows instructions yet. I think Linux should work the same way as Mac OS here.
+
+#### 2\. devtools
+
+Run the following R code to install the `devtools` package:
+
+```
+install.packages("devtools")
+```
+
+### Installing `CopulaModel`
+
+Run the following R code to install the `CopulaModel` package:
+
+```
+devtools::install_github("vincenzocoia/CopulaModel")
+```
