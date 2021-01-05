@@ -85,10 +85,21 @@ Sometimes when I tried to install the package, I wouldn't get the "Library not l
 To elicit the more desirable "library not loaded" error, I re-downloaded this very `CopulaModel` repository as a zip file, unzipped it, and called `install.packages("~/Downloads/CopulaModel-master", type = "source", repos = NULL)`
 
 ```
-> install.packages("~/Downloads/CopulaModel", type = "source", repos = NULL)
+> devtools::install_github("vincenzocoia/CopulaModel")
+Downloading GitHub repo vincenzocoia/CopulaModel@HEAD
+✓  checking for file ‘/private/var/folders/dx/zr_sf92j4t95y6z16w_j6b780000gn/T/RtmpGaNFDT/remotes3fda601e7e12/vincenzocoia-CopulaModel-c0c2150/DESCRIPTION’ ...
+─  preparing ‘CopulaModel’:
+✓  checking DESCRIPTION meta-information ...
+─  cleaning src
+─  checking for LF line-endings in source and make files and shell scripts
+─  checking for empty or unneeded directories
+─  looking to see if a ‘data/datalist’ file should be added
+─  building ‘CopulaModel_0.6.tar.gz’
+   
 * installing *source* package ‘CopulaModel’ ...
 ** using staged installation
 ** libs
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -I/usr/local/include   -fPIC  -Wall -g -O2  -c R_exchmvn.c -o R_exchmvn.o
 gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c  Rgauss-trvine-nonuniq.f90 -o Rgauss-trvine-nonuniq.o
 Rgauss-trvine-nonuniq.f90:107:43:
 
@@ -117,7 +128,7 @@ Error: Rank mismatch between actual argument at (1) and actual argument at (2) (
 Rgauss-trvine-nonuniq.f90:164:51:
 
   103 |                 call intpr("within eps for ",15,j,1)
-      |                                                2  
+      |                                                2   
 ......
   164 |   call intpr("approx nonunique for j=1,...,d-2",32,nonuniq,d-2)
       |                                                   1
@@ -125,6 +136,7 @@ Error: Rank mismatch between actual argument at (1) and actual argument at (2) (
 make: *** [Rgauss-trvine-nonuniq.o] Error 1
 ERROR: compilation failed for package ‘CopulaModel’
 * removing ‘/Library/Frameworks/R.framework/Versions/4.0/Resources/library/CopulaModel’
-Warning in install.packages :
-  installation of package ‘/Users/vincenzocoia/Downloads/CopulaModel’ had non-zero exit status
+* restoring previous ‘/Library/Frameworks/R.framework/Versions/4.0/Resources/library/CopulaModel’
+Error: Failed to install 'CopulaModel' from GitHub:
+  (converted from warning) installation of package ‘/var/folders/dx/zr_sf92j4t95y6z16w_j6b780000gn/T//RtmpGaNFDT/file3fda74f571f1/CopulaModel_0.6.tar.gz’ had non-zero exit status
 ```
