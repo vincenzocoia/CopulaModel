@@ -82,7 +82,7 @@ ln /Library/Frameworks/R.framework/Versions/Current/Resources/lib/libR.dylib /Li
 
 Sometimes when I tried to install the package, I wouldn't get the "Library not loaded" error, but would get a "Rank mismatch" error in a Fortran script. You can see the error message below. 
 
-To elicit the more desirable "library not loaded" error, I re-downloaded this very `CopulaModel` repository as a zip file, unzipped it, and called `install.packages("~/Downloads/CopulaModel-master", type = "source", repos = NULL)`
+To elicit the more desirable "library not loaded" error, I downloaded this very `CopulaModel` repository as a zip file, unzipped it, and called `install.packages("~/Downloads/CopulaModel-master", type = "source", repos = NULL)`
 
 ```
 > devtools::install_github("vincenzocoia/CopulaModel")
