@@ -48,3 +48,83 @@ Run the following R code to install the `devtools` package:
 ```
 install.packages("devtools")
 ```
+
+## Installation Troubleshooting
+
+### "Library not loaded"
+
+When tested on a Mac, the installation tries to look for "libraries" in the wrong place. You can tell if this is the case if you find the message "Library not loaded" somewhere in the error message. I figured out how to solve the problem, thanks to [this Stack Overflow post](https://stackoverflow.com/a/57225398). Here's what I ended up having to do.
+
+The libraries that were missing on my mac were:
+
+- `libgfortran.3.dylib`, although was present on my mac as `libgfortran.5.dylib` (a newer version?) 
+    - R was looking for it at `/usr/local/gfortran/lib/libgfortran.3.dylib`
+    - I found the file at `/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/libgfortran.5.dylib`
+- `libquadmath.0.dylib`
+    - R was looking for it at `/usr/local/gfortran/lib/libquadmath.0.dylib`
+    - I found the file at `/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/libquadmath.0.dylib`
+- `libR.dylib`
+    - R was looking for it at `/Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libR.dylib`
+    - I found the file at `/Library/Frameworks/R.framework/Versions/Current/Resources/lib/libR.dylib`
+
+After finding the actual location of these files on my mac, I had to link them to where R was looking. I found the first two thanks to the stack overflow post above (although their suggested use of `locate` didn't work for me), and the last one I found by updating the R version in the path. Your paths may differ depending on your gcc version.
+
+Linking the files involved using the terminal command `ln`, as in `ln actual/path/to/file path/where/R/is/looking`. You might need to precede all this with `sudo`foo. And for the last one (`libR.dylib`), I had to make the directory `3.5/Resources/lib/` in `/Library/Frameworks/R.framework/Versions/` using `mkdir`. So, all in all:
+
+```
+sudo ln /usr/local/Cellar/gcc/10.2.0/lib/gcc/10/libgfortran.5.dylib /usr/local/gfortran/lib/libgfortran.3.dylib
+ln /usr/local/Cellar/gcc/10.2.0/lib/gcc/10/libquadmath.0.dylib /usr/local/gfortran/lib/libquadmath.0.dylib
+mkdir -p /Library/Frameworks/R.framework/Versions/3.5/Resources/lib
+ln /Library/Frameworks/R.framework/Versions/Current/Resources/lib/libR.dylib /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libR.dylib
+```
+
+### "Rank Mismatch"
+
+Sometimes when I tried to install the package, I wouldn't get the "Library not loaded" error, but would get a "Rank mismatch" error in a Fortran script. You can see the error message below. 
+
+To elicit the more desirable "library not loaded" error, I re-downloaded this very `CopulaModel` repository as a zip file, unzipped it, and called `install.packages`, as below.
+
+```
+> install.packages("~/Downloads/CopulaModel", type = "source", repos = NULL)
+* installing *source* package ‘CopulaModel’ ...
+** using staged installation
+** libs
+gfortran -mmacosx-version-min=10.13 -fno-optimize-sibling-calls  -fPIC  -Wall -g -O2  -c  Rgauss-trvine-nonuniq.f90 -o Rgauss-trvine-nonuniq.o
+Rgauss-trvine-nonuniq.f90:107:43:
+
+  103 |                 call intpr("within eps for ",15,j,1)
+      |                                                2
+......
+  107 |                   call intpr("next row",8, A2(i,:),d)
+      |                                           1
+Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Rgauss-trvine-nonuniq.f90:124:34:
+
+  103 |                 call intpr("within eps for ",15,j,1)
+      |                                                2
+......
+  124 |               call intpr("perm",4,aperm,d)
+      |                                  1
+Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Rgauss-trvine-nonuniq.f90:154:33:
+
+  103 |                 call intpr("within eps for ",15,j,1)
+      |                                                2
+......
+  154 |         call intpr("next row",8, A1(i,:),d)
+      |                                 1
+Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+Rgauss-trvine-nonuniq.f90:164:51:
+
+  103 |                 call intpr("within eps for ",15,j,1)
+      |                                                2  
+......
+  164 |   call intpr("approx nonunique for j=1,...,d-2",32,nonuniq,d-2)
+      |                                                   1
+Error: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+make: *** [Rgauss-trvine-nonuniq.o] Error 1
+ERROR: compilation failed for package ‘CopulaModel’
+* removing ‘/Library/Frameworks/R.framework/Versions/4.0/Resources/library/CopulaModel’
+Warning in install.packages :
+  installation of package ‘/Users/vincenzocoia/git_docs/CopulaModel’ had non-zero exit status
+```
