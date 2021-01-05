@@ -126,5 +126,5 @@ make: *** [Rgauss-trvine-nonuniq.o] Error 1
 ERROR: compilation failed for package ‘CopulaModel’
 * removing ‘/Library/Frameworks/R.framework/Versions/4.0/Resources/library/CopulaModel’
 Warning in install.packages :
-  installation of package ‘/Users/vincenzocoia/git_docs/CopulaModel’ had non-zero exit status
+  installation of package ‘/Users/vincenzocoia/Downloads/CopulaModel’ had non-zero exit status
 ```
