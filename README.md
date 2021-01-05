@@ -69,7 +69,7 @@ The libraries that were missing on my mac were:
 
 After finding the actual location of these files on my mac, I had to link them to where R was looking. I found the first two thanks to the stack overflow post above (although their suggested use of `locate` didn't work for me), and the last one I found by updating the R version in the path. Your paths may differ depending on your gcc version.
 
-Linking the files involved using the terminal command `ln`, as in `ln actual/path/to/file path/where/R/is/looking`. You might need to precede all this with `sudo`foo. And for the last one (`libR.dylib`), I had to make the directory `3.5/Resources/lib/` in `/Library/Frameworks/R.framework/Versions/` using `mkdir`. So, all in all:
+Linking the files involved using the terminal command `ln`, as in `ln actual/path/to/file path/where/R/is/looking`. You might need to precede all this with `sudo`. And for the last one (`libR.dylib`), I had to make the directory `3.5/Resources/lib/` in `/Library/Frameworks/R.framework/Versions/` using `mkdir`. So, all in all:
 
 ```
 sudo ln /usr/local/Cellar/gcc/10.2.0/lib/gcc/10/libgfortran.5.dylib /usr/local/gfortran/lib/libgfortran.3.dylib
