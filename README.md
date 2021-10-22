@@ -53,7 +53,26 @@ install.packages("devtools")
 
 ### "Library not loaded"
 
-When tested on a Mac, the installation tries to look for "libraries" in the wrong place. You can tell if this is the case if you find the message "Library not loaded" somewhere in the error message. I figured out how to solve the problem, thanks to [this Stack Overflow post](https://stackoverflow.com/a/57225398). Here's what I ended up having to do.
+When tested on a Mac, the installation tries to look for "libraries" in the wrong place. You can tell if this is the case if you find the message "Library not loaded" somewhere in the error message. For example, halfway through the error message, you might see something like:
+
+```
+Library not loaded: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
+```
+
+That's the directory R is looking for the file `libRblas.dylib`, yet this file is not in that location.
+
+I figured out how to solve the problem, thanks to [this Stack Overflow post](https://stackoverflow.com/a/57225398). 
+
+Here's what you'll need to do:
+
+1. Find the actual location of the file R is looking for (`libRblas.dylib` in the above cases)
+    - The above Stack Overflow post suggests using `locate` to find the file, but that didn't work for me. YMMV. 
+    - If that doesn't work, try checking below for a list of files I ended up having to find, and where I found them.
+    - If that doesn't work, try navigating to a path similar to the one that R is looking.
+2. Link the actual location of the file to the place R is looking, with the command `ln actual/path/to/file path/where/R/is/looking`
+    - This may involve creating folders to get to the place where R is looking.
+    - You may need `sudo ln` instead of just `ln`. 
+3. Try to install the package again. If you get another `Library not loaded` error, repeat (I had to do this three times). 
 
 The libraries that were missing on my mac were:
 
@@ -66,10 +85,9 @@ The libraries that were missing on my mac were:
 - `libR.dylib`
     - R was looking for it at `/Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libR.dylib`
     - I found the file at `/Library/Frameworks/R.framework/Versions/Current/Resources/lib/libR.dylib`
+    - I had to make the directory `3.5/Resources/lib/` in `/Library/Frameworks/R.framework/Versions/` using `mkdir`. 
 
-After finding the actual location of these files on my mac, I had to link them to where R was looking. I found the first two thanks to the stack overflow post above (although their suggested use of `locate` didn't work for me), and the last one I found by updating the R version in the path. Your paths may differ depending on your gcc version.
-
-Linking the files involved using the terminal command `ln`, as in `ln actual/path/to/file path/where/R/is/looking`. You might need to precede all this with `sudo`. And for the last one (`libR.dylib`), I had to make the directory `3.5/Resources/lib/` in `/Library/Frameworks/R.framework/Versions/` using `mkdir`. So, all in all:
+So, all in all:
 
 ```
 sudo ln /usr/local/Cellar/gcc/10.2.0/lib/gcc/10/libgfortran.5.dylib /usr/local/gfortran/lib/libgfortran.3.dylib
